@@ -10,12 +10,12 @@ echo ">>>>Tooling install started"
 if [[ $CONTAINER_RUN_MODE == "true" ]]; then
   echo
   echo ">>>>$(print_timestamp) Install Python3 package"
-  yum install python3 -y
+  yum install python3.8 -y
   exit_test $? "Install Python3 Failed"
 
   echo
   echo ">>>>$(print_timestamp) Install Python3 Pip package"
-  yum install python3-pip -y
+  yum install python3.8-pip -y
   exit_test $? "Install Python3 Pip Failed"
 
   echo
