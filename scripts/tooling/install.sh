@@ -10,7 +10,7 @@ echo ">>>>Tooling install started"
 if [[ $CONTAINER_RUN_MODE == "true" ]]; then
   echo
   echo ">>>>$(print_timestamp) Install Python3 package"
-  yum install python3.8 -y
+  yum install python3 -y
   exit_test $? "Install Python3 Failed"
 
   echo
@@ -34,7 +34,7 @@ if [[ $CONTAINER_RUN_MODE == "true" ]]; then
 
   echo
   echo ">>>>$(print_timestamp) Install pip package ansible"
-  pip3 install ansible-core==2.12.2 --user
+  pip3 install ansible-core==2.12 --user
   exit_test $? "Install pip package ansible failed"
 fi
 
