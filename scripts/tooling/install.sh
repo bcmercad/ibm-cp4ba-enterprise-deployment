@@ -34,7 +34,7 @@ if [[ $CONTAINER_RUN_MODE == "true" ]]; then
 
   echo
   echo ">>>>$(print_timestamp) Install pip package ansible"
-  pip3 install ansible-core==2.12 --user
+  pip3 install ansible-core==2.11.12 --user
   exit_test $? "Install pip package ansible failed"
 fi
 
